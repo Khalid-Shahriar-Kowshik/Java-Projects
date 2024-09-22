@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000004;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TrainerController">
+   <children>
+      <Text fill="WHITE" layoutX="62.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainer Menu" wrappingWidth="237.13671875">
+         <font>
+            <Font name="Impact" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="532.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #d63855;" text="Logout" />
+      <ListView fx:id="traineeList" layoutX="359.0" layoutY="144.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="397.0" layoutY="99.0" mnemonicParsing="false" onAction="#viewListOfTrainees" text="View List of Trainees" />
+      <TextField fx:id="traineeId" layoutX="32.0" layoutY="99.0" promptText="Trainee ID" />
+      <TextField fx:id="workoutName" layoutX="32.0" layoutY="132.0" promptText="Workout Name" />
+      <TextField fx:id="workoutType" layoutX="32.0" layoutY="168.0" promptText="Workout Type" />
+      <Button layoutX="35.0" layoutY="200.0" mnemonicParsing="false" onAction="#addWorkOutItemToTrainee" text="Add Workout to Trainee" />
+      <Label fx:id="rankLabel" layoutX="189.0" layoutY="300.0" prefHeight="44.0" prefWidth="124.0" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="69.0" layoutY="288.0" mnemonicParsing="false" onAction="#showRank" text="Show Rank" />
+      <Button layoutX="65.0" layoutY="332.0" mnemonicParsing="false" onAction="#updateRank" text="Update Rank" />
+      <Label fx:id="workoutAdd" layoutX="189.0" layoutY="140.0" prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #000007;" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
